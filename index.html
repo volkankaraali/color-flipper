@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Color-Flipper</title>
+</head>
+
+<body id="body">
+    <!-- toast start -- appears when the copy button is clicked -->
+    <div class="position-fixed top-0 p-3" style="z-index: 11">
+
+        <div id="liveToast" class="toast text-white bg-success align-items-center" role="alert" aria-live="assertive"
+            aria-atomic="true">
+
+        </div>
+
+    </div>
+    <!-- toast end-->
+
+    <div class="card">
+        <h5>pick a color</h5>
+
+        <div class="pickerColorDiv">
+            <input id="colorPicker" type="color">
+            <p id="textColorPicker" type="text"></p>
+            <button id="liveToastBtnColorPicker" type="button" class="copyBtn btn btn-outline-info">copy</button>
+
+        </div>
+
+
+        <hr>
+        <div class="randomColorDiv">
+            <button id="randomColorBtn" class="btn btn-secondary">random color</button>
+            <p id="textRandomColor" type="text"></p>
+            <button id="liveToastBtnRandomColor" type="button" class="copyBtn btn btn-outline-info">copy</button>
+
+        </div>
+        <hr>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <button class="btn btn-success" onclick="handleColor('#198754')">
+                        #46ca2e
+                    </button>
+                </div>
+
+                <div class="col-4">
+                    <button class="btn btn-warning" onclick="handleColor('#ffc107')">
+                        #ffc107
+                    </button>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-info" onclick="handleColor('#0dcaf0')">
+                        #0dcaf0
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <button class="btn btn-danger" onclick="handleColor('#dc3545')">
+                        #dc3545
+                    </button>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-primary" onclick="handleColor('#0d6efd')">
+                        #0d6efd
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <script src="/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

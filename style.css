@@ -1,0 +1,48 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 20px;
+  width: 400px;
+}
+
+#randomColorBtn {
+  font-size: small;
+}
+
+.randomColorDiv,
+.pickerColorDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 40px;
+  margin: 8px 0px;
+}
+
+.randomColorDiv > p {
+  margin: auto 0px;
+}
+
+.pickerColorDiv > p {
+  margin: auto 0px;
+}
+
+#textColorPicker,
+#textRandomColor {
+  width: 100px;
+  height: 30px;
+  border: 1px solid gainsboro;
+  border-radius: 2px;
+}
+#colorPicker {
+  width: 100px;
+  margin: auto 0px;
+}
+
+.row {
+  margin-bottom: 3px;
+}
