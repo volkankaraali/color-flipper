@@ -61,4 +61,13 @@ randomColorBtn.addEventListener("click", () => {
 
 const handleColor = (color) => {
     document.getElementById("body").style.backgroundColor = color
+    toastDiv.innerHTML = `<div class="d-flex">
+    <div id="toast-body" class="toast-body ">
+    ${color} is copied!
+    </div>
+    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+</div>`
+    let toast = new bootstrap.Toast(toastDiv)
+    navigator.clipboard.writeText(color);
+    toast.show()
 }
